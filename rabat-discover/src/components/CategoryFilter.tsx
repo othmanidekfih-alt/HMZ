@@ -1,5 +1,3 @@
-import { SpotCategory } from '../types';
-
 interface CategoryFilterProps {
   selectedCategory: string;
   onCategoryChange: (category: string) => void;
