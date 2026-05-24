@@ -21,17 +21,6 @@ const createCustomIcon = (category: string) => {
     activities: '🎯'
   };
 
-  const iconHtml = `
-    <div style="
-      font-size: 32px;
-      text-align: center;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-    ">
-      ${iconColors[category] || '📍'}
-    </div>
-  `;
-
   return new Icon({
     iconUrl: 'data:image/svg+xml;base64,' + btoa(`
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
